@@ -28,8 +28,14 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+|Ivon                | Lembrete de devolução do livro     | Que eu pare de levar multas da igreja  |
+|Ivon                | Vizualizar quais livros estão dispo| Não ir atoa buscar um livro que não tem|
+|                    | niveis                             |                                        |
+|Angelo              | Reservar o livro antes de ir buscar| Para garantir que ninguem o alugue     |
+|Brenda              | Externder o aluguel online         | para não me locomover ate la so para   |
+|                    |                                    | externder o aluguel                    |
+|Willian             | Avaliar o livro pelo aplicativo    | para os usuarios poderem ver se o livro|
+|                    |                                    | vale a pena de ler                     |
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
@@ -77,60 +83,44 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+ID     | Descrição do Requisito                                             | Prioridade
+-------|--------------------------------------------------------------------|------------
+RF-001 | O sistema deve permitir o cadastro e login de usuários.            | ALTA
+RF-002 | O sistema deve fornecer um catálogo de livros físicos com busca e filtros por título, autor, ou categorias. | ALTA
+RF-003 | O sistema deve permitir que os usuários façam reservas e empréstimos de livros disponíveis. | ALTA
+RF-004 | O sistema deve manter um histórico de empréstimos e devoluções por usuário. | ALTA
+RF-005 | O sistema deve enviar notificações para lembrar os usuários sobre prazos de devolução, novos livros adicionados, e atualizações importantes. | ALTA
+RF-006 | O sistema deve permitir que os usuários avaliem e comentem os livros que leram. | MÉDIA
+RF-007 | O sistema deve fornecer um painel administrativo para que os bibliotecários possam gerenciar o catálogo de livros, reservas, e empréstimos. | ALTA
+RF-008 | O sistema deve gerar relatórios sobre o número de empréstimos, livros mais e menos emprestados, histórico de empréstimos, e outros dados relevantes. | MÉDIA
+RF-009 | O sistema deve recomendar livros aos usuários com base em seus empréstimos anteriores. | MÉDIA
+RF-010 | O sistema deve organizar os livros em diversas categorias, como Religião, Estudos Bíblicos, Ficção Cristã, entre outros. | ALTA
+RF-011 | O sistema deve permitir que os usuários adicionem livros à lista de desejos para futura leitura ou reserva. | MÉDIA
+RF-012 | O sistema deve mostrar a disponibilidade dos livros em tempo real, indicando se estão emprestados ou disponíveis. | ALTA
+
 
 ### Requisitos não Funcionais
 
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+ID      | Descrição do Requisito                                                         | Prioridade
+--------|-------------------------------------------------------------------------------|------------
+RNF-001 | O sistema deve ser responsivo e otimizado para dispositivos móveis.            | ALTA
+RNF-002 | O sistema deve processar requisições dos usuários em no máximo 3 segundos.     | MÉDIA
+RNF-003 | O sistema deve suportar dispositivos iOS e Android.                            | ALTA
+RNF-004 | O sistema deve ter uma interface amigável e intuitiva.                         | ALTA
+RNF-005 | O sistema deve garantir a segurança dos dados dos usuários, com criptografia para senhas e outras informações sensíveis. | ALTA
+RNF-006 | O sistema deve ser capaz de operar offline, permitindo que os usuários acessem o catálogo de livros baixados previamente. | MÉDIA
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 ## Restrições
 
-O projeto está restrito pelos itens apresentados na tabela a seguir.
-
-|ID| Restrição                                             |
-|--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+ID   | Descrição da Restrição
+-----|------------------------
+R-01 | A interface do aplicativo deve ser limpa, moderna e intuitiva, garantindo facilidade de uso tanto em dispositivos móveis quanto em desktops.
+R-02 | O cadastro e a atualização de novos conteúdos só podem ser realizados por uma equipe de bibliotecários ou voluntários designados pela igreja.
+R-03 | O sistema deve incluir funcionalidades específicas, como reserva de livros, gerenciamento de empréstimos e devoluções, e um sistema de notificações para informar sobre novos livros, prazos de devolução, e atualizações importantes no sistema.
 
 ## Diagrama de Casos de Uso
-
-O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
-
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.
-
-> **Links Úteis**:
-> - [Criando Casos de Uso](https://www.ibm.com/docs/pt-br/elm/6.0?topic=requirements-creating-use-cases)
-> - [Como Criar Diagrama de Caso de Uso: Tutorial Passo a Passo](https://gitmind.com/pt/fazer-diagrama-de-caso-uso.html/)
-> - [Lucidchart](https://www.lucidchart.com/)
-> - [Astah](https://astah.net/)
-> - [Diagrams](https://app.diagrams.net/)
+![image](https://github.com/user-attachments/assets/d3ef4ab6-7923-4105-a90a-f310d0ff28de)
 
 # Matriz de Rastreabilidade
 
@@ -171,3 +161,36 @@ O gerenciamento adequado de tarefas contribuirá para que o projeto alcance alto
 O processo de determinar o orçamento do projeto é uma tarefa que depende, além dos produtos (saídas) dos processos anteriores do gerenciamento de custos, também de produtos oferecidos por outros processos de gerenciamento, como o escopo e o tempo.
 
 ![Orçamento](img/02-orcamento.png)
+
+# Estimativa de Custos
+
+Abaixo está uma estimativa de custos para o projeto de desenvolvimento do aplicativo de gerenciamento de biblioteca para a Igreja Batista Anunciar. A estimativa inclui recursos humanos, hardware, software, redes e serviços.
+
+## Estimativa de Custos
+
+# Estimativa de Custos
+
+Abaixo está uma estimativa de custos para o desenvolvimento do aplicativo de gerenciamento de biblioteca para a Igreja Batista Anunciar. O projeto será realizado por 6 alunos, utilizando React Native e um banco de dados Firebase, com um prazo de um semestre e supervisão do professor.
+
+## Estimativa de Custos
+
+| Categoria          | Item                                      | Quantidade | Custo Unitário | Custo Total  |
+|--------------------|-------------------------------------------|------------|----------------|--------------|
+| **Recursos Humanos** | Desenvolvimento (6 Alunos)                 | 6          | R$ 0 (Estágio) | R$ 0         |
+|                    | Supervisão do Professor (6 meses)          | 1          | R$ 2.000/mês   | R$ 12.000    |
+| **Subtotal Recursos Humanos**                                |            |                | **R$ 12.000** |
+| **Hardware**        | Preparação de Notebooks (já existentes)     | 1          | R$ 500         | R$ 500       |
+|                    | Equipamentos de Desenvolvimento (se necessário) | 0          | R$ 0           | R$ 0         |
+| **Subtotal Hardware**                                      |            |                | **R$ 500**   |
+| **Software**        | Licença Visual Studio                      | 1          | R$ 1.000       | R$ 1.000     |
+|                    | Banco de Dados Firebase (Anual)            | 1          | R$ 1.000       | R$ 1.000     |
+| **Subtotal Software**                                      |            |                | **R$ 2.000** |
+| **Redes**           | Hospedagem em Nuvem (Anual)                | 1          | R$ 600         | R$ 600       |
+|                    | Serviços de Backup e Segurança (Anual)     | 1          | R$ 400         | R$ 400       |
+| **Subtotal Redes**                                         |            |                | **R$ 1.000** |
+| **Serviços**        | Consultoria e Suporte Técnico (por demanda) | 1          | R$ 1.000       | R$ 1.000     |
+|                    | Treinamento e Capacitação (por demanda)     | 1          | R$ 500         | R$ 500       |
+| **Subtotal Serviços**                                       |            |                | **R$ 1.500** |
+| **Total Geral**                                           |            |                | **R$ 17.000** |
+
+
