@@ -1,23 +1,26 @@
-# TÍTULO DO PROJETO
+# C-Team Fit
 
-`CURSO`
+`Tecnologia Análise e Desenvolvimento de Sistemas`
 
-`DISCIPLINA`
+`Trabalho Interdisciplinar: Aplicação Móvel`
 
-`SEMESTRE`
+`4° SEMESTRE`
 
 Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Bernardo Silva Oliveira
+* Daniel Henrique Alves Bicalho Dias
+* Diogo Augusto Magalhães Marques
+* Gabriel Augusto Lana Vidal
+* Gustavo Meira Becattini
+* Hebert Tadeu de Castro Liberato
+* Pedro Henrique da Silva Araújo Queiroz
 
 ## Orientador
 
-* Nome completo do professor 1
+* Pedro Felipe Alves de Oliveira
 
 ## Instruções de utilização
 

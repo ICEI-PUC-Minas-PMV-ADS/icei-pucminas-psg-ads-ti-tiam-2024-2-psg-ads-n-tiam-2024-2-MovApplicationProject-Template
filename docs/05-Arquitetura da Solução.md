@@ -1,58 +1,86 @@
-# Arquitetura da Solução
+[cteam-fit-default-rtdb-Cteam-export.json](https://github.com/user-attachments/files/17267168/cteam-fit-default-rtdb-Cteam-export.json)# Arquitetura da Solução
 
-<span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>
+## Requisitos e Restrições
 
-Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
+As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto. Para determinar a prioridade de requisitos, aplicar uma técnica de priorização de requisitos e detalhar como a técnica foi aplicada.
 
-![Arquitetura da Solução](img/02-mob-arch.png)
+### Requisitos Funcionais
 
-## Diagrama de Classes
+|ID    | Descrição do Requisito  | Prioridade |
+|------|-----------------------------------------|----|
+|RF-001| O sistema deve permitir a criação, leitura, atualização e exclusão (CRUD) de informações relevantes dos dados dos usuários, tais como cadastro e informações de login.| ALTA | 
+|RF-002| O sistema deve ser capaz de registrar os exercícios realizados pelos alunos, com carga, e repetições. E ao final da série, dar o exercício como concluído. | ALTA |
+|RF-003| A aplicação deve permitir a adição de lembretes sobre horario de refeições para o usuario.  | ALTA |
+|RF-004| O sistema deverá permitir que o profissional cadastre os treinos de seus alunos na plataforma, mostrando a ficha para o aluno | ALTA |
+|RF-005| O sistema deve oferecer a funcionalidade de agendamento de sessões de treino. | ALTA |
+|RF-006| A aplicação deve garantir que apenas usuários cadastrados, e devidamente logados em suas contas tenham acesso a seus treinos e demais funcionalidades do sistema | MÉDIA |
+|RF-007| O sistema deverá permitir que o personal trainer anexe links com vídeos dos exercícios | MÉDIA |
+|RF-008| O sistema deve ter uma interface específica para o professor | MÉDIA |
+|RF-009| O sistema deve ter interface específica para o aluno. | ALTA |
+|RF-010| O sistema deve permitir que o usuário visualize um histórico detalhado de seus treinos anteriores, incluindo exercícios realizados, carga e repetições, e status de conclusão. | MEDIA |
+|RF-011| O sistema deve permitir ao personal trainer registrar e acompanhar avaliações físicas periódicas de cada aluno, como medidas corporais, peso e porcentagem de gordura. | MEDIA |
+|RF-012| A aplicação deve oferecer um controle de presença, permitindo que o personal trainer registre a frequência dos alunos nos treinos. | MEDIA |
+|RF-013| O sistema deve permitir que os usuários recuperem ou redefinam suas senhas através de um e-mail cadastrado. | MEDIA |
+|RF-014| O sistema deve permitir que os alunos avaliem cada treino com uma nota simples (por exemplo, de 1 a 5 estrelas). | MEDIA |
 
-O diagrama de classes ilustra graficamente como será a estrutura do software, e como cada uma das classes da sua estrutura estarão interligadas. Essas classes servem de modelo para materializar os objetos que executarão na memória.
+### Requisitos não Funcionais
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Classes”.
+|ID     | Descrição do Requisito  |Prioridade |
+|-------|-------------------------|----|
+|RNF-001| O sistema deve persistir os dados no banco de dados | ALTA | 
+|RNF-002| A aplicação, deve se manter em atividade, pelo menos, durante todo o período de horário comercial (5h - 23h59) | MÉDIA | 
+|RNF-003| O sistema deve ser capaz de suportar no mínimo 10 acessos simultâneos de usuários | MÉDIA |
+|RNF-004| O aplicativo deve funcionar de forma consistente em dispositivos com diferentes tamanhos de tela e resoluções, garantindo uma experiência de usuário otimizada em diferentes smartphones. | ALTA |
 
-> - [Diagramas de Classes - Documentação da IBM](https://www.ibm.com/docs/pt-br/rational-soft-arch/9.6.1?topic=diagrams-class)
-> - [O que é um diagrama de classe UML? | Lucidchart](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-classe-uml)
+|ID| Restrições                                            |
+|--|-------------------------------------------------------|
+|01| O projeto deverá ser entregue até o final do semestre |
+|02| Não pode ser desenvolvido um módulo de backend        |
 
-## Modelo ER
+## Modelo Não Relacional de Dados
 
-O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.]
+O grupo optou por utilizar o Firebase, que é um banco de dados NoSQL, portanto não serão feitos os modelos ER e Relacional. No entanto, seguem exemplos de como organizaremos nossos arquivos JSON baseados no armazenamento de dados que faremos:
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Modelo ER”.
+```yaml
+{
 
-> - [Como fazer um diagrama entidade relacionamento | Lucidchart](https://www.lucidchart.com/pages/pt/como-fazer-um-diagrama-entidade-relacionamento)
+{
+  "Exercicios": {
+    "id_exercicio_1": {
+      "carga": 90,
+      "grupo_muscular": "pernas",
+      "link_video": "",
+      "nome": "Leg Press 45",
+      "repeticoes": 12,
+      "serie": 3
+    }
+  },
+  "Fichas": {
+    "id_ficha_1": {
+      "data_criacao": "2024-10-02",
+      "id_ficha": 32154,
+      "matricula_usuario": 1234,
+      "status": "ativa",
+      "validade": "2024-11-02"
+    }
+  },
+  "Usuarios": {
+    "id_usuario_1": {
+      "data_nasc": "",
+      "email": "",
+      "fichas": "Fichas",
+      "matricula": 1234,
+      "nome": "",
+      "objetivo": "",
+      "role": ""
+    }
+  }
+}
+}
 
-## Esquema Relacional
+```
 
-O Esquema Relacional corresponde à representação dos dados em tabelas juntamente com as restrições de integridade e chave primária.
- 
-As referências abaixo irão auxiliá-lo na geração do artefato “Esquema Relacional”.
-
-> - [Criando um modelo relacional - Documentação da IBM](https://www.ibm.com/docs/pt-br/cognos-analytics/10.2.2?topic=designer-creating-relational-model)
-
-## Modelo Físico
-
-Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do banco de dados. Este arquivo deverá ser incluído dentro da pasta src\bd.
-
-## Tecnologias Utilizadas
-
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
-
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
-
-## Hospedagem
-
-Explique como a hospedagem e o lançamento da plataforma foi feita.
-
-> **Links Úteis**:
->
-> - [Website com GitHub Pages](https://pages.github.com/)
-> - [Programação colaborativa com Repl.it](https://repl.it/)
-> - [Getting Started with Heroku](https://devcenter.heroku.com/start)
-> - [Publicando Seu Site No Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)
-
-## Qualidade de Software
+## Padronização de Qualidade do Produto
 
 Conceituar qualidade de fato é uma tarefa complexa, mas ela pode ser vista como um método gerencial que através de procedimentos disseminados por toda a organização, busca garantir um produto final que satisfaça às expectativas dos stakeholders.
 
