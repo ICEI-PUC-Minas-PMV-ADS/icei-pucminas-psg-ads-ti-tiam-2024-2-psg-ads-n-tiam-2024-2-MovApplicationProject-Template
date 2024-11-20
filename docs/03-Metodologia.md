@@ -3,7 +3,11 @@
 
 <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
 
-Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Definições sobre os ambiente de trabalho utilizados pela  equipe para desenvolver o projeto. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).
+A abordagem adotada pela equipe para o desenvolvimento do projeto de sistema para o negócio de rodízio de pizzas baseou-se em uma metodologia ágil, adaptada para as necessidades específicas do cliente. A metodologia ágil foi escolhida devido à sua flexibilidade e capacidade de responder rapidamente às mudanças de requisitos, características essenciais para um ambiente dinâmico como o do setor de serviços de alimentação. Para o desenvolvimento do projeto, utilizamos o ambiente integrado de desenvolvimento Visual Studio. Este ambiente foi selecionado por sua capacidade robusta de suportar diversas tecnologias de maneira integrada, facilitando não apenas a codificação, mas também a depuração e a integração contínua de novas funcionalidades.
+
+A gestão do código fonte foi realizada através do Git, configurado em um fluxo de trabalho baseado no método Kanban. Isso proporcionou à equipe uma visão clara das tarefas em andamento e permitiu priorizar de forma eficiente as entregas. Reuniões diárias (stand-ups) foram realizadas para alinhar o progresso, identificar obstáculos e ajustar estratégias conforme necessário. Ao adotar essa abordagem ágil combinada com ferramentas modernas de desenvolvimento e gestão de projetos, não apenas atendemos às expectativas do cliente, mas também superamos suas necessidades. 
+
+O sistema resultante não apenas automatiza o processo de gestão do rodízio de pizzas, mas também melhora significativamente a experiência tanto para os operadores quanto para os clientes finais, demonstrando nossa capacidade de entrega de soluções eficientes e orientadas para resultados.
 
 ## Relação de Ambientes de Trabalho
 
@@ -19,9 +23,7 @@ foi utilizado para hospedagem do repositório.
 O projeto segue a seguinte convenção para o nome de branches:
 
 - `main`: versão estável já testada do software
-- `unstable`: versão já testada do software, porém instável
-- `testing`: versão em testes do software
-- `dev`: versão de desenvolvimento do software
+- `development`: código de teste de desenvolvimento
 
 Quanto à gerência de issues, o projeto adota a seguinte convenção para
 etiquetas:
@@ -31,7 +33,7 @@ etiquetas:
 - `enhancement`: uma funcionalidade precisa ser melhorada
 - `feature`: uma nova funcionalidade precisa ser introduzida
 
-Discuta como a configuração do projeto foi feita na ferramenta de versionamento escolhida. Exponha como a gerência de tags, merges, commits e branchs é realizada. Discuta como a gerência de issues foi realizada.
+A atualização que será realizada, garantindo entregas contínuas e com qualidade sempre com aprovação das partes. Além disso, usaremos para controle de versão do código ou github com branchs como main (código original), development (código de teste de desenvolvimento) e um branch específico para cada história desenvolvida.
 
 > **Links Úteis**:
 > - [Microfundamento: Gerência de Configuração](https://pucminas.instructure.com/courses/87878/)
@@ -45,13 +47,13 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 
 ### Divisão de Papéis
 
-Apresente a divisão de papéis entre os membros do grupo.
+Abaixo segue a divisão de papeis da equipe:
 
 Exemplificação: A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para definição do processo de desenvolvimento. A equipe está organizada da seguinte maneira:
-- Scrum Master: Felipe Domingos;
-- Product Owner: Rommel Carneiro;
-- Equipe de Desenvolvimento: Pedro Penna, Pedro Ivo, Rodrigo Richard;
-- Equipe de Design: Simone Nogueira.
+- Scrum Master: Vinicius Ferreira;
+- Product Owner: Vitor Emmanuel;
+- Equipe de Desenvolvimento: Amanda Avelino, Gabriel Arthur, Gabriel Chaves, João Vitor Almeida, Vinicius Ferreira e Vitor Emmanuel;
+- Equipe de Design: Amanda Avelino, Gabriel Chaves e João Vitor Almeida.
 
 > **Links Úteis**:
 > - [11 Passos Essenciais para Implantar Scrum no seu Projeto](https://mindmaster.com.br/scrum-11-passos/)
@@ -60,8 +62,32 @@ Exemplificação: A equipe utiliza metodologias ágeis, tendo escolhido o Scrum 
 
 ### Processo
 
-Coloque  informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo deverá fazer uso do recurso de gerenciamento de projeto oferecido pelo GitHub, que permite acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
- 
+ Papéis no Scrum:
+Product Owner (PO): Responsável por gerenciar o backlog do produto, priorizando as funcionalidades e interagindo com os stakeholders.
+Scrum Master (SM): Facilita o processo, remove impedimentos e garante que a equipe siga as práticas Scrum.
+Time de Desenvolvimento: Conjunto de membros que trabalham na execução e entrega dos incrementos de software.
+
+Sprint Planning (Planejamento da Sprint):
+Realizar uma reunião de planejamento no início de cada sprint.
+Definir os itens do backlog que serão priorizados para a sprint.
+Dividir esses itens em tarefas no GitHub, com detalhes como descrição clara, responsáveis e tempo estimado.
+Estabelecer a meta da sprint, uma descrição concisa do objetivo a ser alcançado.
+
+GitHub Projects para Gerenciamento Visual:
+Quadro Kanban: Utilizar o GitHub Projects como quadro para visualização de tarefas.
+Colunas típicas podem ser:
+Backlog: Tarefas que ainda não foram priorizadas para a sprint.
+Pronto para o desenvolvimento: Tarefas selecionadas para a sprint atual.
+Em andamento: Tarefas em execução.
+Disponivel para validação: Tarefas aguardando revisão ou testes.
+Concluidas: Tarefas concluídas.
+
+weekly Scrum (Reunião Semanal):
+Realizar semanalmente reuniões rápidas (até 30 minutos) para que cada membro responda:
+O que fez na semana anterior.
+O que planeja fazer na proxima.
+Se há algum impedimento ou bloqueio.
+
 > **Links Úteis**:
 > - [Planejamento e Gestáo Ágil de Projetos](https://pucminas.instructure.com/courses/87878/pages/unidade-2-tema-2-utilizacao-de-ferramentas-para-controle-de-versoes-de-software)
 > - [Sobre quadros de projeto](https://docs.github.com/pt/issues/organizing-your-work-with-project-boards/managing-project-boards/about-project-boards)
@@ -74,11 +100,11 @@ Coloque  informações sobre detalhes da implementação do Scrum seguido pelo g
 
 As ferramentas empregadas no projeto são:
 
-- Editor de código.
-- Ferramentas de comunicação
-- Ferramentas de desenho de tela (_wireframing_)
+- Editor de código escolhido: plataforma ExpoDev.
+- Ferramentas de comunicação: Discord, Microsoft Teams e WhatsApp.
+- Ferramenta de desenho de tela escolhido: Figma.
 
-O editor de código foi escolhido porque ele possui uma integração com o sistema de versão. As ferramentas de comunicação utilizadas possuem integração semelhante e por isso foram selecionadas. Por fim, para criar diagramas utilizamos essa ferramenta por melhor captar as necessidades da nossa solução.
+O editor de código foi escolhido porque ele possui uma integração com o sistema de versão e facilita o desenvolvimento mobile utilizando o react native. As ferramentas de comunicação utilizadas possuem integração semelhante e por isso foram selecionadas. Por fim, para criar diagramas utilizamos o Figma pela variedade de elementos que facilitam o esboço e o desenvolvimento do prototipo.
 
 Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
  

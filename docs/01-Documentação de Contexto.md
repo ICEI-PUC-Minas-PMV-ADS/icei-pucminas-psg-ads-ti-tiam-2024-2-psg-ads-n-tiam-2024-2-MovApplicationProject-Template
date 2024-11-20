@@ -1,46 +1,21 @@
 # Introdução
-
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+No nosso projeto abordaremos um contexto de uma empresa responsável por fazer rodízios de pizza. Atualmente seu processo é manual e sua gestão depende bastante de um controle não muito automatizado. Com o nosso projeto, buscamos auxiliar nosso cliente tanto no agendamento de novos eventos, como gestão dos eventos cadastrados e também facilitar o metodologia de agendamento de um novo evento, garantindo um fluxo mais automatizado e simples, otimizando os seus processos. O nosso público alvo é tanto a nosso cliente(empresa de rodízio de pizza), quanto os clientes do nosso cliente(pessoas interessadas em fazer um agendamento).
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
+Atualmente, a dor do nosso cliente é sobre o processo de agendamento muito dependente de um funcionário, a dificuldade de gestão dos eventos marcados e a demora(pela correria) do atendimento de novos clientes. Pela necessidade de pessoas em muitos dos processos, as vezes a correria do dia a dia dificulta a comunicação dos mesmos com novos clientes.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+O aplicativo a ser desenvolvido será usado tanto pelos funcionários do nosso cliente, quanto para os clientes do nosso cliente, otimizando a metodologia de agendamento de eventos e 
+facilitando também a gestão de eventos já cadastrados. 
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
-
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
+Como principal objetivo do nosso software, destacamos a necessidade de uma reformulação no agendamento de novos eventos por parte da empresa, pois atualmente esse processo é bastante demorado e demanda muitas vezes de outras pessoas para dar continuidade nesse fluxo. Além disso, buscamos melhorar a experiência tanto do cliente como dos funcionários da empresa, otimizando os processos e deixando-os mais simples, poupando bastante tempo que podem ser realocados para outras atividades dentro da empresa. Como fonte de pesquisa do problema no cliente, destacamos tanto a demora do agendamento de novos eventos, como também uma gestão dos eventos marcados.
  
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
-
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Escolhemos fazer essa aplicação devido ser um software que vai precisar bastante da nossa interação e vai testar nossos conhecimentos com a tecnologia do React Native. Será um desafio pra nós fazer uma aplicação com um visual flúido e responsivo. Além disso, um software para gestão não se aplica somente ao básico, pode-se explorar integrações com sistemas de pagamento, análise de dados para previsão de demanda, personalização de pedidos com base em preferências dos clientes, entre outras funcionalidades inovadoras que agreguem valor ao negócio. Buscamos com a nossa aplicação fornecer um produto intuitivo e que agregue no dia a dia do nosso cliente, otimizando seus processos e ajudando com suas demandas.
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
+As pessoas que usarão nossa aplicação consistem em dois tipos de públicos, sendo eles usuários na visão de cliente, que podem ser leigos na tecnologia, portanto propomos fazer uma interface robusta e simples para auxiliar pessoas com dificuldade com novas tecnologias, conseguirem também utilizar nosso aplicativo; e também a visão de funcionário, que contamos com pessoas que conhecem minimamente a tecnologia, porém que também apresentará uma interface simples e intuitiva, garantindo facilidade no uso das funcionalidades.
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
-
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
