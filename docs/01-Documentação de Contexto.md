@@ -1,46 +1,32 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
-
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+O gerenciamento do acervo de livros da Igreja Batista Anunciar enfrenta desafios significativos, como controle manual ineficiente, dificuldades na localização de livros específicos, ausência de notificações para devolução e uma gestão inadequada do inventário. Esses problemas resultam em um processo de empréstimo desorganizado e acessível de maneira limitada para a comunidade da igreja. Atualmente, a gestão é realizada de forma manual, o que não só consome tempo, mas também aumenta o risco de erros e perda de dados. A implementação de uma solução digital é necessária para otimizar e modernizar o processo, proporcionando uma administração mais eficaz e um acesso mais fácil aos livros.
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+### Objetivo Geral
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+Desenvolver um aplicativo para a Igreja Batista Anunciar que facilite o gerenciamento e o acesso ao acervo de livros, tornando o processo de empréstimo e devolução mais organizado e acessível para a comunidade.
+
+### Objetivos Específicos
+
+1. **Implementar um sistema de catalogação e busca de livros**: Criar uma interface que permita a busca por títulos, autores e categorias, facilitando a localização dos livros desejados pelos usuários.
+2. **Desenvolver um sistema de gerenciamento de empréstimos e devoluções**: Incluir funcionalidades para o registro de empréstimos, devoluções e notificações automáticas sobre prazos de devolução e atualizações importantes.
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+A escolha deste projeto decorre da necessidade de aprimorar o gerenciamento do acervo da biblioteca da Igreja Batista Anunciar. A abordagem atual, que é manual, resulta em ineficiências que afetam a experiência dos usuários e a administração do acervo. Um sistema digital proporcionará um controle mais preciso, a emissão de relatórios analíticos e notificações automáticas, facilitando a gestão e melhorando o serviço oferecido à comunidade. A implementação de uma solução tecnológica visa não apenas resolver os problemas identificados, mas também proporcionar um acesso mais fácil e eficiente aos recursos disponíveis.
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
+O aplicativo atenderá três grupos principais:
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
+1. **Membros da Igreja Batista Anunciar**: Usuários que desejam emprestar livros. A interface precisa ser intuitiva e acessível, permitindo busca, reserva e empréstimo de livros de forma simples.
+2. **Bibliotecários e Voluntários**: Responsáveis pela administração do acervo, incluindo a atualização de registros e gerenciamento de empréstimos. Precisam de um painel administrativo eficiente para realizar suas tarefas.
+3. **Administradores**: Necessitam de acesso completo para gerar relatórios e configurar o sistema. Sua função é supervisionar o funcionamento geral da aplicação e garantir que todas as operações estejam em conformidade.
 
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+A interface do aplicativo deve ser projetada para ser amigável e acessível, tanto em dispositivos móveis quanto em desktops, considerando os diferentes níveis de familiaridade com tecnologia dos usuários.
+
+

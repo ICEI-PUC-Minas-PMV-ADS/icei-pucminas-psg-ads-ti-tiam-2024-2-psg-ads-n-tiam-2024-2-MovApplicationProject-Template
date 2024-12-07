@@ -1,19 +1,21 @@
-# TÍTULO DO PROJETO
+# Biblioteca Anuciar
 
-`CURSO`
+`Analise e desinvolvimento de sistemas`
 
-`DISCIPLINA`
+`Trabalho Interdisciplinar: Aplicação Móvel`
 
-`SEMESTRE`
+`4 periodo`
 
 Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Arthur Henrique de Oliveira Acácio
+* Isabella Bosco
+* Vitor Hugo
+* Messias Junio
+* Luis Gustavo Mendes
+* Rodrigo Yule
 
 ## Orientador
 
