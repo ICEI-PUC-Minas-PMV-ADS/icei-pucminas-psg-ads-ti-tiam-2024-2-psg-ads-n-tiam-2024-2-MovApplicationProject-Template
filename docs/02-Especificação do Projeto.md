@@ -1,26 +1,13 @@
-# Especificações do Projeto
-
-<span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
-
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+Tereza de Jesus tem 68 anos, é aposentada e viúva. É uma pessoa aventureira, que gosta de manter-se ativa e realizar atividades físicas no dia a dia. Agora, está buscando uma plataforma simples e fácil de usar para agendar suas consultas de fisioterapia, facilitando o cuidado com seu bem-estar físico.
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+Augusto Farfus tem 19 anos, é atleta e universitário. É uma pessoa que busca evoluir profissionalmente buscando o melhor rendimento possível nos esportes praticados. Agora, está buscando um aplicativo que oferece diversas funcionalidades de fisioterapia: agendamento de exames, acompanhamento da sua evolução, indicações de exercícios e contato mais próximo com o profissional.
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+Nicole Catarina tem 26 anos, é economista. É uma pessoa sedentária. Agora, preocupada com a sua saúde na terceira idade, está buscando serviços de fisioterapia onde há recomendações de exercícios físicos junto com acompanhamento de um profissional. 
+
+André Luiz, 37 anos, é motoboy e possui um histórico de acidentes de motocicleta, o que resultou em várias fraturas e limitações articulares. Agora, ele busca um aplicativo que ofereça serviços de fisioterapia para ajudá-lo a recuperar seus movimentos e retornar ao trabalho como entregador.
 
 ## Histórias de Usuários
 
@@ -28,146 +15,87 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+|Fisioterapeuta  | Gerenciar as consultas       |     Organizar de forma eficiente as consultas dos clientes na minha clínica de fisioterapia      |
+|Tereza de Jesus       | Realizar marcações de consultas               | Facilitar o agendamento e acompanhamento das minhas sessões de fisioterapia  |
+|Augusto Farfus | Consultar o meu histórico de consultas | Para acompanhar a minha evolução nas atividades físicas | 
+|Nicole Catarina | Recomendações de exercícios físicos | Para realizar atividades físicas de acordo com as recomendações feita por um fisioterapeuta de acordo com o resultado das consultas |
+| André Luiz | Realizar marcações de consultas | Facilitar o agendamento e acompanhamento das minhas sessões de fisioterapia para acompanhar a minha recuperação  |
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
-
-## Modelagem do Processo de Negócio 
-
-### Análise da Situação Atual
-
-Apresente aqui os problemas existentes que viabilizam sua proposta. Apresente o modelo do sistema como ele funciona hoje. Caso sua proposta seja inovadora e não existam processos claramente definidos, apresente como as tarefas que o seu sistema pretende implementar são executadas atualmente, mesmo que não se utilize tecnologia computacional. 
-
-### Descrição Geral da Proposta
-
-Apresente aqui uma descrição da sua proposta abordando seus limites e suas ligações com as estratégias e objetivos do negócio. Apresente aqui as oportunidades de melhorias.
-
-### Processo 1 – NOME DO PROCESSO
-
-Apresente aqui o nome e as oportunidades de melhorias para o processo 1. Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN. 
-
-![Processo 1](img/02-bpmn-proc1.png)
-
-### Processo 2 – NOME DO PROCESSO
-
-Apresente aqui o nome e as oportunidades de melhorias para o processo 2. Em seguida, apresente o modelo do processo 2, descrito no padrão BPMN.
-
-![Processo 2](img/02-bpmn-proc2.png)
-
-## Indicadores de Desempenho
-
-Apresente aqui os principais indicadores de desempenho e algumas metas para o processo. Atenção: as informações necessárias para gerar os indicadores devem estar contempladas no diagrama de classe. Colocar no mínimo 5 indicadores. 
-
-Usar o seguinte modelo: 
-
-![Indicadores de Desempenho](img/02-indic-desemp.png)
-Obs.: todas as informações para gerar os indicadores devem estar no diagrama de classe a ser apresentado a posteriori. 
 
 ## Requisitos
-
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto. Para determinar a prioridade de requisitos, aplicar uma técnica de priorização de requisitos e detalhar como a técnica foi aplicada.
 
 ### Requisitos Funcionais
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| Permitir que o usuário faça agendamento de consultas | ALTA | 
+|RF-002| Permitir que o usuário acompanhe o andamento das suas consultas   | MÉDIA |
+|RF-003| Permitir que o usuário visualize os exercícios físicos recomendados pelo fisioterapeuta  | BAIXA |
+|RF-004| Permitir que o fisioterapeuta visualize os dados do paciente | MÉDIA |
+|RF-005| Permitir que o usuário anexa exames  | BAIXA |
+|RF-006| Permitir que o usuário visualize a sua evolução após a consulta | MÉDIA |
+|RF-007| Permitir que o fisioterapeuta visualize todas as consultas marcadas | ALTA |
+|RF-008| Permitir que o usuário visualize os dias disponíveis da agenda do fisioterapeuta | ALTA |
+|RF-009| Permitir que o usuário ou o fisioterapeuta faça cancelamento da consulta | MÉDIA |
+|RF-010| Permitir que o usuário faça um cadastro no aplicativo | MÉDIA |
+
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001| O sistema deve ser responsivo para rodar em um dispositivo móvel | MÉDIA | 
+|RNF-002| Deve processar os agendamentos no máximo 10 segundos |  MÉDIA | 
+|RNF-003| O sistema deve garantir que todos os dados estejam em conformidade com a LGPD (Lei Geral de Proteção de Dados)| MÉDIA |
+|RNF-004| O sistema deve suportar até 500 usuários simultâneos sem degradação significativa de desempenho | MÉDIA |
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 ## Restrições
 
-O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|02| Não pode ser desenvolvido fora do éscopo mobile        |
+|03| O projeto deverá ter um banco de dados em nuvem     |
+|04| Todos os integrantes devem ter conhecimentos das tecnologias aplicadas |
+|05| O projeto deve seguir a documentação|
 
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
 ## Diagrama de Casos de Uso
 
-O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
+![Diagrama 2](https://github.com/user-attachments/assets/0d6f70a7-7d4d-4fd6-ab82-4f1e0cddda25)
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.
+![Diagrama 1](https://github.com/user-attachments/assets/2df1fb65-c19c-4b63-8f75-bc10f527e4fa)
 
-> **Links Úteis**:
-> - [Criando Casos de Uso](https://www.ibm.com/docs/pt-br/elm/6.0?topic=requirements-creating-use-cases)
-> - [Como Criar Diagrama de Caso de Uso: Tutorial Passo a Passo](https://gitmind.com/pt/fazer-diagrama-de-caso-uso.html/)
-> - [Lucidchart](https://www.lucidchart.com/)
-> - [Astah](https://astah.net/)
-> - [Diagrams](https://app.diagrams.net/)
+![Diagrama 3](https://github.com/user-attachments/assets/e9b29759-5476-4033-a788-d37d29b02bb1)
 
-# Matriz de Rastreabilidade
+![Diagrama 4](https://github.com/user-attachments/assets/4b69bf1d-5bee-490d-9eaa-8a329c66f8a7)
 
-A matriz de rastreabilidade é uma ferramenta usada para facilitar a visualização dos relacionamento entre requisitos e outros artefatos ou objetos, permitindo a rastreabilidade entre os requisitos e os objetivos de negócio. 
+![Diagrama 5](https://github.com/user-attachments/assets/e2e50dda-0a1a-4f54-ac96-a2854a7f9293)
 
-A matriz deve contemplar todos os elementos relevantes que fazem parte do sistema, conforme a figura meramente ilustrativa apresentada a seguir.
+![Diagrama 6](https://github.com/user-attachments/assets/1a6447da-efcc-45d8-bd6c-c5196fa43f96)
 
-![Exemplo de matriz de rastreabilidade](img/02-matriz-rastreabilidade.png)
+![Diagrama 7](https://github.com/user-attachments/assets/fa61e7fc-c04f-491b-bc48-76a3d63db786)
 
-> **Links Úteis**:
-> - [Artigo Engenharia de Software 13 - Rastreabilidade](https://www.devmedia.com.br/artigo-engenharia-de-software-13-rastreabilidade/12822/)
-> - [Verificação da rastreabilidade de requisitos usando a integração do IBM Rational RequisitePro e do IBM ClearQuest Test Manager](https://developer.ibm.com/br/tutorials/requirementstraceabilityverificationusingrrpandcctm/)
-> - [IBM Engineering Lifecycle Optimization – Publishing](https://www.ibm.com/br-pt/products/engineering-lifecycle-optimization/publishing/)
+![Diagrama 8](https://github.com/user-attachments/assets/e675fcf1-07ca-468e-ac41-d12b10e0d8d7)
+
+![Diagrama 9](https://github.com/user-attachments/assets/c9732fe0-af3c-4818-93f8-6d3b7248eacf)
+
+![Diagrama 10](https://github.com/user-attachments/assets/e089a5df-c785-413c-803a-194cd9043b35)
 
 
-# Gerenciamento de Projeto
-
-De acordo com o PMBoK v6 as dez áreas que constituem os pilares para gerenciar projetos, e que caracterizam a multidisciplinaridade envolvida, são: Integração, Escopo, Cronograma (Tempo), Custos, Qualidade, Recursos, Comunicações, Riscos, Aquisições, Partes Interessadas. Para desenvolver projetos um profissional deve se preocupar em gerenciar todas essas dez áreas. Elas se complementam e se relacionam, de tal forma que não se deve apenas examinar uma área de forma estanque. É preciso considerar, por exemplo, que as áreas de Escopo, Cronograma e Custos estão muito relacionadas. Assim, se eu amplio o escopo de um projeto eu posso afetar seu cronograma e seus custos.
 
 ## Gerenciamento de Tempo
 
-Com diagramas bem organizados que permitem gerenciar o tempo nos projetos, o gerente de projetos agenda e coordena tarefas dentro de um projeto para estimar o tempo necessário de conclusão.
+![image](https://github.com/user-attachments/assets/40243575-a43c-40ef-a003-9e0754093a13)
 
-![Diagrama de rede simplificado notação francesa (método francês)](img/02-diagrama-rede-simplificado.png)
-
-O gráfico de Gantt ou diagrama de Gantt também é uma ferramenta visual utilizada para controlar e gerenciar o cronograma de atividades de um projeto. Com ele, é possível listar tudo que precisa ser feito para colocar o projeto em prática, dividir em atividades e estimar o tempo necessário para executá-las.
-
-![Gráfico de Gantt](img/02-grafico-gantt.png)
 
 ## Gerenciamento de Equipe
 
-O gerenciamento adequado de tarefas contribuirá para que o projeto alcance altos níveis de produtividade. Por isso, é fundamental que ocorra a gestão de tarefas e de pessoas, de modo que os times envolvidos no projeto possam ser facilmente gerenciados. 
-
-![Simple Project Timeline](img/02-project-timeline.png)
+![WhatsApp Image 2024-09-14 at 15 54 31](https://github.com/user-attachments/assets/0e9f2621-ca9d-455d-a147-0539aee4d7fd)
 
 ## Gestão de Orçamento
 
-O processo de determinar o orçamento do projeto é uma tarefa que depende, além dos produtos (saídas) dos processos anteriores do gerenciamento de custos, também de produtos oferecidos por outros processos de gerenciamento, como o escopo e o tempo.
+<img width="260" alt="image" src="https://github.com/user-attachments/assets/f873cacd-2d91-439b-9599-24ab15cc3143">
 
-![Orçamento](img/02-orcamento.png)
